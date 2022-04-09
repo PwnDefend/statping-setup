@@ -12,10 +12,9 @@ docker volume inspect statping-persistent-storage
 docker run -d -it -p 8080:8080 --mount source=statping-persistent-storage,target=/statping --name persistent-statping statping/statping
 
 #Setup
-http://x.x.x.x:8080/
+curl http://x.x.x.x:8080/
 #Dashboard
-http://x.x.x.x:8080/login
-
+curl http://x.x.x.x:8080/login
 
 #Stop the container
 docker stop persistent-statping
