@@ -1,0 +1,1 @@
+# statping-setup
